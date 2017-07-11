@@ -1,8 +1,10 @@
 .. image:: https://travis-ci.org/wiseman/py-webrtcvad.svg?branch=master
     :target: https://travis-ci.org/wiseman/py-webrtcvad
 
-Note: To extract voices and save to a single file, use::
-
+1. Convert your file to a .wav with sample rate of 8000, 16000, or 32000. You can use the sox library as follows:
+    sox <input_file> -r 16000 output.wav
+    
+2. To extract voices and save to a single file, use::
     python extract_voices.py <aggressiveness (1, 2, or 3)> <path to input wav file> <path to output wav file>
 
 py-webrtcvad
