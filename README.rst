@@ -1,8 +1,13 @@
 .. image:: https://travis-ci.org/wiseman/py-webrtcvad.svg?branch=master
     :target: https://travis-ci.org/wiseman/py-webrtcvad
 
+Note: To extract voices and save to a single file, use::
+
+    python extract_voices.py <aggressiveness (1, 2, or 3)> <path to input wav file> <path to output wav file>
+
 py-webrtcvad
 ============
+
 
 This is a python interface to the WebRTC Voice Activity Detector
 (VAD).  It is compatible with Python 2 and Python 3.
